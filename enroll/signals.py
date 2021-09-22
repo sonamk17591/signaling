@@ -21,6 +21,8 @@ def login_success(sender,request,user,**kwargs):
 @receiver (user_logged_out,sender=User)
 def logout_success(sender,request,user,**kwargs):
     print('-------')
+    print('introduction of signal')
+
     print('This is logout success signal')
     print('Sender',sender)
     print('Request',request)
